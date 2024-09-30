@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Newsletter Template</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Importing Google Font -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        table {
+            width: 100%;
+            border-spacing: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header, .footer {
+            background-color: #25dad0; /* Unified color for header and footer */
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+        .header img {
+            width: 121px;
+        }
+        .nav-menu {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .nav-menu a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .nav-menu a:hover {
+            color: #ffd700; /* Gold color on hover */
+        }
+        .hero img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .btn {
+            background-color: #35404D;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #2a2f35; /* Darker shade on hover */
+        }
+        .news-section {
+            margin-top: 20px;
+            padding: 10px;
+            border-top: 2px solid #25dad0;
+            display: flex; /* Use flexbox for layout */
+            flex-wrap: wrap; /* Allow wrapping to the next line */
+            justify-content: space-between; /* Space between items */
+        }
+        .news-item {
+            flex: 0 0 48%; /* Set width to 48% for two items per row */
+            margin: 10px 0; /* Margin on the top and bottom */
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            background-color: #fafafa;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .news-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+        .news-item img {
+            width: 100%;
+            border-radius: 5px 5px 0 0;
+        }
+        .news-item h3 {
+            color: #333;
+            padding: 10px;
+            font-size: 18px;
+            text-align: center; /* Center the title */
+            font-family: 'Roboto', sans-serif; /* Beautiful font for titles */
+            font-weight: 700; /* Bold font weight */
+        }
+        .news-item p {
+            padding: 0 10px 10px;
+            color: #666;
+            font-size: 14px;
+            text-align: center; /* Center the description */
+            font-family: 'Roboto', sans-serif; /* Beautiful font for descriptions */
+            font-weight: 400; /* Normal font weight */
+        }
+        .social-icons {
+            margin: 10px 0;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #ffd700; /* Gold color on hover */
+        }
+    </style>
+</head>
+<body>
+
+<table role="presentation">
+    <tr>
+        <td align="center">
+            <table class="container">
+                <!-- HEADER -->
+                <tr>
+                    <td class="header">
+                        <img src="images/logo.jpg" alt="Logo"style="width: 400px; height:auto;">
+                        <div class="nav-menu">
+                            <a href="#">Home</a>
+                            <a href="#">About</a>
+                            <a href="#">Services</a>
+                            <a href="#">Contact</a>
+                        </div>
+                    </td>
+                </tr>
+                
+                <!-- HERO IMAGE -->
+                <tr>
+                    <td class="hero">
+                        <img src="images/AD1.jpg" alt="Hero Image">
+                    </td>
+                </tr>
+                
+                <!-- CONTENT -->
+                <tr>
+                    <td class="content">
+                        <h1>Welcome to Our Website</h1>
+                        <p>This is an introductory text about the website and the services offered.</p>
+                        <a href="#" class="btn">Learn More</a>
+                    </td>
+                </tr>
+
+                <!-- NEWS SECTION -->
+                <tr>
+                    <td class="news-section">
+                        <h2 style="width: 100%; text-align: center;">Latest News</h2>
+                        <div class="news-item">
+                            <img src="images/M3.png" alt="News Image 1"style="width: 300px; height:200px;">
+                            <h3>Sports</h3>
+                            <p>This is a brief description of news article 1, summarizing the main points and engaging the reader.</p>
+                        </div>
+                        <div class="news-item">
+                            <img src="images/M1.jpg" alt="News Image 2"style="width: 300px; height:200px;">
+                            <h3>News Title 2</h3>
+                            <p>This is a brief description of news article 2, providing an overview of the content.</p>
+                        </div>
+                        <div class="news-item">
+                            <img src="images/E4.jpg" alt="News Image 3"style="width: 300px; height:200px;">
+                            <h3>News Title 3</h3>
+                            <p>This is a brief description of news article 3, highlighting the key aspects and inviting further reading.</p>
+                        </div>
+                        <div class="news-item">
+                            <img src="images/F4.jpeg" alt="News Image 4"style="width: 300px; height:200px;">
+                            <h3>News Title 4</h3>
+                            <p>This is a brief description of news article 4, elaborating on the details and significance of the news.</p>
+                        </div>
+                        <div class="news-item">
+                            <img src="images/F2.png" alt="News Image 5"style="width: 300px; height:200px;">
+                            <h3>News Title 5</h3>
+                            <p>This is a brief description of news article 5, summarizing the latest developments in this topic.</p>
+                        </div>
+                    </td>
+                </tr>
+
+                <!-- FOOTER -->
+                <tr>
+                    <td class="footer">
+                        <p>© 2024, Company Name. All rights reserved.</p>
+                        <p>Email: info@company.com | Phone: +00 123 456 7890</p>
+                        <div class="social-icons">
+                            <a href="#" target="_blank">📘</a> <!-- Facebook icon -->
+                            <a href="#" target="_blank">🐦</a> <!-- Twitter icon -->
+                            <a href="#" target="_blank">📸</a> <!-- Instagram icon -->
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
